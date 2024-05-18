@@ -1,0 +1,103 @@
+@charset "EUC-KR";
+
+/* ----------------TABLE---------------- */
+.tab_1 {			/* insertForm.jsp 작은 가입양식 테이블 */
+	border: 2px solid darkgray;
+	text-align: center;
+	width: 330;
+	height: 340;
+	border-collapse: collapse;
+}
+
+.tab_2 {			/* main.me 큰 메인 테이블 */
+	border: 2px solid darkgray;
+	text-align: center;
+	width: 500;
+	height: 200;
+	border-collapse: collapse;
+}
+
+.tab_3 {			/* writeForm.bo 중간크기 양식 테이블 */
+	border: 2px solid darkgray;
+	text-align: center;
+	width: 450;
+	height: 200;
+	border-collapse: collapse;
+}
+
+.tab_4 {			/* list.bo 큰 리스트 테이블 + content.bo */
+	border: 2px solid darkgray;
+	text-align: center;
+	width: 600;
+	height: 200;
+	border-collapse: collapse;
+}
+
+/* ----------------TH, TD---------------- */
+.th_1, .td_1 {		/* writeForm TH, TD 모양 */
+	border: 1px solid darkgray;
+}
+
+/* ----------------A---------------- */
+a:link {
+	color: gray;
+	text-decoration: none;
+}
+a:visited {
+	color: darkgray;
+	text-decoration: none;
+}
+a:hover {
+	color: #c0c0c0;
+	text-decoration: underline;
+}
+a:active {
+	color: #778899;
+	text-decoration: none;
+}
+
+/* ----------------DIV---------------- */
+.div_1 {				/* 작은 양식 폰트 */
+	font-size: 12px;
+	font-weight: 700;
+	color: #2f4f4f;
+}
+
+.div_2 {				/* 큰 양식 폰트 */
+	font-size: 14px;
+	font-weight: 700;
+	color: #696969;
+}
+
+/* ----------------SPAN---------------- */
+.span_1 {					/* 작은 양식 폰트 */
+	font-size: 12px;
+	font-weight: 700;
+	color: #2f4f4f;
+}
+
+.span_2 {					/* 큰 양식 폰트 */
+	font-size: 14px;
+	font-weight: 700;
+	color: #696969;
+}
+	
+/* ----------------IMG---------------- */
+.img_1 {
+	border-radius: 30px;		/* 끝부분 둥글게 */
+}
+
+/* ----------------BTN---------------- */
+.btn_1 {
+	font-size: 15px;
+	background-color: c0c0c0;
+	color: white;
+	border: none;
+	border-radius: 40px;
+	cursor: pointer;
+}
+
+/* ----------------LABEL---------------- */
+.lab_1 {						/* 포인터 커서로 변경 */
+		cursor: pointer;
+	}

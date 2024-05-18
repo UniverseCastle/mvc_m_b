@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+	<display-name>mvc</display-name>
+<!-- 	==============================member============================== -->
+	<servlet>
+		<servlet-name>member</servlet-name>
+		<servlet-class>mvc.member.controller.MemberController</servlet-class>
+		<init-param>
+			<param-name>memberURI</param-name>
+			<param-value>
+				C:/Users/UC10/Desktop/wjs/js/mvc/src/main/webapp/WEB-INF/properties/memberURI.properties
+			</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>member</servlet-name>
+		<url-pattern>*.me</url-pattern>
+	</servlet-mapping>
+	
+<!-- 	==============================board============================== -->
+	<servlet>
+		<servlet-name>board</servlet-name>
+		<servlet-class>mvc.board.controller.BoardController</servlet-class>
+		<init-param>
+			<param-name>boardURI</param-name>
+			<param-value>
+				C:/Users/UC10/Desktop/wjs/js/mvc/src/main/webapp/WEB-INF/properties/boardURI.properties
+			</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>board</servlet-name>
+		<url-pattern>*.bo</url-pattern>
+	</servlet-mapping>
+</web-app>
