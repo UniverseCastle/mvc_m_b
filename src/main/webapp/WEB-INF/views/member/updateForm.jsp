@@ -2,25 +2,25 @@
     pageEncoding="UTF-8"%>
 <link rel="stylesheet" href="../css/table.css" 	/>
 
-<style>
-	span {
-		font-size: 12px;
-		font-weight: 700;
-		color: #2f4f4f;
-	}
-</style>
-
 <CENTER>
 	<B><FONT size="6" color="darkgray">정보 수정</FONT></B>
-</CENTER>
 <br />
 
 <FORM action="updatePro.me" method="post">
-	<TABLE align="center" cellspacing="0" cellpadding="0" class="tab_1">
+
+	<TABLE style="width: 330;">
+		<TR>
+			<TD align="right">
+				<BUTTON type="button" class="btn_1" onclick="location.href='main.me'">메인</BUTTON>
+			</TD>
+		</TR>
+	</TABLE>
+	
+	<TABLE class="tab_1">
 		<TR>
 			<TD width="35%"><div class="div_1">아이디</div></TD>
 			<TD align="left">
-				<span>${sessionScope.sid}</span>	<br />
+				<SPAN class="span_1">${sessionScope.sid}</SPAN>	<br />
 				<input type="hidden" name="id" value="${sessionScope.sid}">
 			</TD>
 		</TR>
@@ -63,15 +63,15 @@
 		<TR>
 			<TD><div class="div_1">성별</div></TD>
 			<TD align="left">
-				<span>${dto.gender}</span>
+				<SPAN class="span_1">${dto.gender}</SPAN>
 			</TD>
 		</TR>
 		<TR>
 			<TD colspan="2">
 				<input type="reset" value="다시작성" class="btn_1"	/>	&nbsp;
-				<input type="submit" value="수정완료" class="btn_1"	/>	&nbsp;
-				<input type="button" value="메인으로" class="btn_1" onclick="location.href='main.me'"	/>
+				<input type="submit" value="수정완료" class="btn_1"	/>
 			</TD>
 		</TR>
 	</TABLE>
 </FORM>
+</CENTER>

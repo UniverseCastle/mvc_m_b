@@ -7,6 +7,15 @@
 <CENTER>
 	<B><FONT size="6" color="darkgray">글내용</FONT></B>
 	<br /><br />
+	
+<TABLE style="width: 600;">
+	<TR>
+		<TD align="right">
+			<BUTTON class="btn_1" type="button" onclick="location.href='list.bo'">글목록</BUTTON>
+		</TD>
+	</TR>
+</TABLE>
+	
 <TABLE class="tab_4" style="height: 30%;">
 	<TR>
 		<TH class="th_1" style="width: 10%;"><DIV class="div_2">글번호</DIV></TH>
@@ -50,9 +59,7 @@
 				&nbsp;
 			</c:if>
 				<BUTTON class="btn_1" type="button" onclick="location.href='writeForm.bo?num=${dto.num}&ref=${dto.ref}&re_step=${dto.re_step}&re_level=${dto.re_level}'">답글쓰기</BUTTON>
-				&nbsp;
 		</c:if>
-			<BUTTON class="btn_1" type="button" onclick="location.href='list.bo'">글목록</BUTTON>
 		</TD>
 	</TR>
 </TABLE>
